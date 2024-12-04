@@ -38,7 +38,7 @@ button {
   padding: 10px;
   border: none;
   border-radius: 10px;
-  font-size: 60px;
+  font-size: 55px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
@@ -75,18 +75,18 @@ p {
   font-size: 24px;
 }
 
-.your-score span {
-  color: #b92323;
+#human-score {
+  color: #33782a;
 }
 
-.machine-score span {
-  color: #33782a;
+#machine-score {
+  color: #b92323;
 }
 
 .btns {
   margin-top: 30px;
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 #rock {
