@@ -1,4 +1,9 @@
 const result = document.querySelector(".result");
+const humanScore = document.querySelector("#human-score");
+const machineScore = document.querySelector("#machine-score");
+
+let humanScoreNumber = 0;
+let machineScoreNumber = 0;
 
 const playHuman = (humanChoice) => {
   playTheGame(humanChoice, playMachine());
@@ -21,8 +26,12 @@ const playTheGame = (human, machine) => {
     (human === "paper" && machine === "rock") ||
     (human === "scissors" && machine === "paper")
   ) {
+    humanScoreNumber++;
+    humanScore.innerHTML = humanScoreNumber;
     result.innerHTML = "Você VENCEU a máquina!";
   } else {
+    machineScoreNumber++;
+    machineScore.innerHTML = machineScoreNumber;
     result.innerHTML = "Você PERDEU para máquina!";
   }
 };
